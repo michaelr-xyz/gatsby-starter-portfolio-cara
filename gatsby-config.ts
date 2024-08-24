@@ -8,14 +8,14 @@ const config: GatsbyConfig = {
     // You can overwrite values here that are used for the SEO component
     // You can also add new values here to query them like usual
     // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.mjs
-    siteTitle: `Cara`,
-    siteTitleAlt: `Cara - Gatsby Starter Portfolio`,
-    siteHeadline: `Cara - Gatsby Theme from @lekoarts`,
-    siteUrl: `https://cara.lekoarts.de`,
-    siteDescription: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
+    siteTitle: `Michael Ryan`,
+    siteTitleAlt: `Michael Ryan - Engineering Complex Technologies through Elegant Simplicity`,
+    siteHeadline: `Michael Ryan - Engineering Complex Technologies through Elegant Simplicity`,
+    siteUrl: `https://micahelr.xyz`,
+    siteDescription: `Engineering Complex Technologies through Elegant Simplicity`,
     siteImage: `/banner.jpg`,
     siteLanguage: `en`,
-    author: `@lekoarts_de`,
+    author: `@michaelr-xyz`,
   },
   trailingSlash: `always`,
   plugins: [
@@ -48,15 +48,6 @@ const config: GatsbyConfig = {
             type: `image/png`,
           },
         ],
-      },
-    },
-    // You can remove this plugin if you don't need it
-    shouldAnalyseBundle && {
-      resolve: `gatsby-plugin-webpack-statoscope`,
-      options: {
-        saveReportTo: `${__dirname}/public/.statoscope/_bundle.html`,
-        saveStatsTo: `${__dirname}/public/.statoscope/_stats.json`,
-        open: false,
       },
     },
   ].filter(Boolean) as Array<PluginRef>,
